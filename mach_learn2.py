@@ -17,7 +17,7 @@ reg.fit(base["Horas Gastas"].values.reshape(-1, 1), base["Horas Planejadas"])
 
 # Solicite ao usuário um valor de horas a serem gastas
 user_input = input("Digite o valor de horas a serem gastas: ")
-input_value = float(user_input)
+input_value = float(user_input) #Conversão do dado em float
 
 # Faça a previsão com base no valor inserido pelo usuário
 prediction = reg.predict([[input_value]])

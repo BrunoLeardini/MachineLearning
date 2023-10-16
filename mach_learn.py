@@ -16,7 +16,7 @@ reg = linear_model.LinearRegression()
 reg.fit(base["Horas Planejadas"].values.reshape(-1, 1), base["Horas Gastas"])
 
 user_input = input("Digite o valor de horas a serem planejadas: ")
-input_value = float(user_input)  # Converte a entrada do usuário em um float
+input_value = float(user_input)  # Converte a entrada do usuário em um dado do tipo float
 
 # Faça a previsão usando o modelo treinado com o valor inserido pelo usuário
 prediction = reg.predict([[input_value]])
